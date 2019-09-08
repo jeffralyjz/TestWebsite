@@ -7,21 +7,29 @@
 
 
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     /*No border is added by default to the elements of this website*/
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 body{
     /* Everything related to font that pertains to the entire website must be put here in the body selector */
     font-family: "Lato", sans-serif; /*Primary font is Lato, and if that font is not available, then it defaults to sans-serif*/
     font-weight: 400;
-    font-size: 16px;
+    /*font-size: 16px;*/
     line-height: 1.7;
     color: #777;
-    padding:30px;
+    padding:3rem;
+
+    box-sizing: border-box;
 }
 
 .header{
@@ -38,17 +46,17 @@ body{
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0% 75vh);
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
-.logo{
-    height: 40px;
+.header__logo{
+    height: 4rem;
 }
 
-.text-box{
+.header__text-box{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -57,27 +65,27 @@ body{
 }
 
 .header-primary{
-    color: #fff;
+    color: #fff; 
     text-transform: uppercase;
 
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
-.header-primary-name{
+.header-primary--name{
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
     animation: moveInTop .75s ease-out;
 }
 
-.header-primary-description{
+.header-primary--description{
     display: block;
     font-weight: 700px;
-    font-size: 20px;
-    letter-spacing: 12.5px;
+    font-size: 2rem;
+    letter-spacing: 1.2rem;
 
     animation: moveInBottom .75s ease-out;
 }
@@ -85,12 +93,12 @@ body{
 @keyframes moveInTop{
     0%{
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-5rem);
     }
 
     80%{
         opacity: .6;
-        transform: translateY(10px);
+        transform: translateY(1rem);
     }
 
     100%{
@@ -102,11 +110,11 @@ body{
 @keyframes moveInBottom{
     0%{
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
 
     80%{
-        transform: translateY(-10px);
+        transform: translateY(-1rem);
     }
 
     100%{
@@ -118,23 +126,24 @@ body{
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 50px;
+    padding: 1.5rem 5rem;
     display: inline-block;
     border-radius: 1000px;
     transition: all .2s;
+    font-size: 1.6rem;
 }
 
 .btn:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
 }
 
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 .6rem 2rem rgba(0,0,0,0.5);
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 

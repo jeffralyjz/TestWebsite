@@ -1,0 +1,141 @@
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /*No border is added by default to the elements of this website*/
+    box-sizing: border-box;
+}
+
+body{
+    /* Everything related to font that pertains to the entire website must be put here in the body selector */
+    font-family: "Lato", sans-serif; /*Primary font is Lato, and if that font is not available, then it defaults to sans-serif*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding:30px;
+}
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(174, 199, 170, 0.8),
+        rgba(61, 133, 167, 0.8)),
+    url(../img/tutorpicResized.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0% 75vh);
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo{
+    height: 40px;
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-primary{
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+}
+
+.header-primary-name{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+
+    animation: moveInTop .75s ease-out;
+}
+
+.header-primary-description{
+    display: block;
+    font-weight: 700px;
+    font-size: 20px;
+    letter-spacing: 12.5px;
+
+    animation: moveInBottom .75s ease-out;
+}
+
+@keyframes moveInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    80%{
+        opacity: .6;
+        transform: translateY(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    80%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 50px;
+    display: inline-block;
+    border-radius: 1000px;
+    transition: all .2s;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+
+}

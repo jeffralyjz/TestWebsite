@@ -1,150 +1,102 @@
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem); }
+  80% {
+    opacity: .6;
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
-
-
-
-
-
-
-
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  80% {
+    transform: translateY(-1rem); }
+  100% {
+    transform: translateY(0); } }
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    /*No border is added by default to the elements of this website*/
-    box-sizing: inherit;
-}
+  margin: 0;
+  padding: 0;
+  /*No border is added by default to the elements of this website*/
+  box-sizing: inherit; }
 
-html{
-    font-size: 62.5%;
-}
+html {
+  font-size: 62.5%; }
 
-body{
-    /* Everything related to font that pertains to the entire website must be put here in the body selector */
-    font-family: "Lato", sans-serif; /*Primary font is Lato, and if that font is not available, then it defaults to sans-serif*/
-    font-weight: 400;
-    /*font-size: 16px;*/
-    line-height: 1.7;
-    color: #777;
-    padding:3rem;
+body {
+  box-sizing: border-box; }
 
-    box-sizing: border-box;
-}
+body {
+  /* Everything related to font that pertains to the entire website must be put here in the body selector */
+  font-family: "Lato", sans-serif;
+  /*Primary font is Lato, and if that font is not available, then it defaults to sans-serif*/
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem; }
 
-.header{
-    height: 95vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(174, 199, 170, 0.8),
-        rgba(61, 133, 167, 0.8)),
-    url(../img/tutorpicResized.jpg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
-
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0% 75vh);
-}
-
-.header__logo-box{
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
-
-.header__logo{
-    height: 4rem;
-}
-
-.header__text-box{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.header-primary{
-    color: #fff; 
-    text-transform: uppercase;
-
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
-}
-
-.header-primary--name{
+.header-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .header-primary--name {
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-
-    animation: moveInTop .75s ease-out;
-}
-
-.header-primary--description{
+    animation: moveInTop .75s ease-out; }
+  .header-primary--description {
     display: block;
     font-weight: 700px;
     font-size: 2rem;
     letter-spacing: 1.2rem;
+    animation: moveInBottom .75s ease-out; }
 
-    animation: moveInBottom .75s ease-out;
-}
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  border-radius: 1000px;
+  transition: all .2s;
+  font-size: 1.6rem; }
 
-@keyframes moveInTop{
-    0%{
-        opacity: 0;
-        transform: translateY(-5rem);
-    }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
 
-    80%{
-        opacity: .6;
-        transform: translateY(1rem);
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes moveInBottom{
-    0%{
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-
-    80%{
-        transform: translateY(-1rem);
-    }
-
-    100%{
-        transform: translateY(0);
-    }
-}
-
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 5rem;
-    display: inline-block;
-    border-radius: 1000px;
-    transition: all .2s;
-    font-size: 1.6rem;
-}
-
-.btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
-}
-
-.btn:active{
-    transform: translateY(-1px);
-    box-shadow: 0 .6rem 2rem rgba(0,0,0,0.5);
-}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.5); }
 
 .btn--white {
-    background-color: #fff;
-    color: #777;
+  background-color: #fff;
+  color: #777; }
 
-}
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(191, 211, 212, 0.8), rgba(40, 129, 180, 0.8)), url(../img/tutorpicResized.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0% 75vh); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 4rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }

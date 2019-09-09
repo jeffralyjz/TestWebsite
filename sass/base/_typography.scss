@@ -1,0 +1,38 @@
+body{
+    /* Everything related to font that pertains to the entire website must be put here in the body selector */
+
+    font-family: "Lato", sans-serif; /*Primary font is Lato, and if that font is not available, then it defaults to sans-serif*/
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding:3rem;
+}
+
+.header-primary{
+    color: $color-white; 
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+
+&--name{
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation: moveInTop .75s ease-out;
+}
+
+&--description{
+    display: block;
+    font-weight: 700px;
+    font-size: 2rem;
+    letter-spacing: 1.2rem;
+
+    animation: moveInBottom .75s ease-out;
+}
+
+}

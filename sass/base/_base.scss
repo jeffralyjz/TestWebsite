@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /*No border is added by default to the elements of this website*/
+    box-sizing: inherit;
+}
+
+html{
+    //This defines what 1rem means
+    font-size: 62.5%;
+}
+
+body{
+
+    box-sizing: border-box;
+}

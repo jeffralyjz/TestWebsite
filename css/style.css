@@ -42,18 +42,18 @@ body {
   color: #777;
   padding: 3rem; }
 
-.header-primary {
+.heading-primary {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
-  .header-primary--name {
+  .heading-primary--name {
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation: moveInTop .75s ease-out; }
-  .header-primary--description {
+  .heading-primary--description {
     display: block;
     font-weight: 700px;
     font-size: 2rem;
@@ -83,7 +83,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(191, 211, 212, 0.8), rgba(40, 129, 180, 0.8)), url(../img/tutorpicResized.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(11, 137, 221, 0.85)), url(../img/tutorpicResized.jpg);
   background-size: cover;
   background-position: top;
   position: relative;

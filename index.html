@@ -1,11 +1,13 @@
-<!--The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+<!--The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web 
+    browser about what version of HTML the page is written in.
 start of html document and setting the primary language to english-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
         <link rel="stylesheet" href="css/icon-font.css">
@@ -14,6 +16,7 @@ start of html document and setting the primary language to english-->
         
         <title>Jeff Salazr | STEM Enthusiast</title>
     </head>
+
     <body>
         <header class="header">
             <div class="header__logo-box">
@@ -32,7 +35,7 @@ start of html document and setting the primary language to english-->
 
         <main>
             <section class="section-about">
-                <div class="u-center-text u-margin-bottom-small">
+                <div class="u-center-text u-margin-bottom-big">
                     <div class="heading-secondary">
                             See what I can tutor!
                     </div>
@@ -43,26 +46,155 @@ start of html document and setting the primary language to english-->
                             Academic Tutoring
                         </h3>
                         <p class="paragraph">
-                            adipisicing elit. Suscipit odit error consectetur id illo ea quisquam unde, impedit reprehenderit ducimus possimus architecto tempore voluptas commodi molestias similique a voluptates veniam.
+                            adipisicing elit. Suscipit odit error consectetur id illo ea 
+                            quisquam unde, impedit reprehenderit ducimus possimus 
+                            architecto tempore voluptas commodi molestias similique a 
+                            voluptates veniam.
                         </p>
                         <h3 class="heading-tertiary">
                             Skill Tutoring
                         </h3>
                         <p class="paragraph">
-                            ipsum dolor sit amet consectetur, adipisicing elit. Suscipit odit error consectetur id illo ea quisquam unde, 
+                            adipisicing elit. Suscipit odit error consectetur id illo ea 
+                            quisquam unde, impedit reprehenderit ducimus possimus 
+                            architecto tempore voluptas commodi molestias similique a 
+                            voluptates veniam.
                         </p>
+                        
                         <h3 class="heading-tertiary">
-                            General Academic Guidance
+                            General Academic Insight
                         </h3>
                         <p class="paragraph">
-                            ipsum dolor sit amet consectetur, adipisicing elit. Suscipit odits possimus architecto tempore voluptas commodi molestias similique a voluptates veniam.
+                            ipsum dolor sit amet consectetur, adipisicing elit. Suscipit 
+                            odits possimus architecto tempore voluptas commodi molestias 
+                            similique a voluptates veniam.
                         </p>
                     </div>
                     <div class="col-1-of-2">
-                        images
+                        <div class="floated-images">
+                            <img src="img/arduino-workshop-uci-2.JPG" alt="Arduino image" 
+                            class="floated-images__photo floated-images__photo--p1">
+                            <img src="img/NEW_Cal-Bridge_Logo.png" alt="Arduino image 1" 
+                            class="floated-images__photo floated-images__photo--p2">
+                            <img src="img/arduino-workshop-uci-3.JPG" alt="Arduino image 1" 
+                            class="floated-images__photo floated-images__photo--p3">
+                        </div>
                     </div>
                 </div>
             </section>
+            <section class="section-tours" id="section-tours">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Most popular tours
+                    </h2>
+                </div>
+    
+                <div class="row">
+                    <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>3 day tours</li>
+                                        <li>Up to 30 people</li>
+                                        <li>2 tour guides</li>
+                                        <li>Sleep in cozy hotels</li>
+                                        <li>Difficulty: easy</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">$297</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+    
+    
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--2">The Forest Hiker</span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>7 day tours</li>
+                                        <li>Up to 40 people</li>
+                                        <li>6 tour guides</li>
+                                        <li>Sleep in provided tents</li>
+                                        <li>Difficulty: medium</li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">$497</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--3">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--3">The Snow Adventurer</span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>5 day tours</li>
+                                        <li>Up to 15 people</li>
+                                        <li>3 tour guides</li>
+                                        <li>Sleep in provided tents</li>
+                                        <li>Difficulty: hard</li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                            <div class="card__side card__side--back card__side--back-3">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">$897</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---
+                
+                
+                <div class="u-center-text u-margin-top-huge">
+                    <a href="#" class="btn btn--green">Discover all tours</a>
+                </div>
+                -->
+            </section>    
             
         </main>
 

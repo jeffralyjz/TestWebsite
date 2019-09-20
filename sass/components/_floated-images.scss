@@ -1,0 +1,64 @@
+.floated-images{
+    position: relative;
+    
+    &__photo{
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: .2rem;
+        position: absolute;
+        z-index:9;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        &--p1{
+            left: 0;
+            top: 2rem;
+            z-index: 11;
+            position: relative;
+
+            &--t1{
+                // float: left;
+                position: absolute;
+                top: -3rem;
+                left: 0;
+                z-index: 15;
+                display: block;
+                border-bottom:2px solid blue;
+                transition: all .5s;
+            }
+            &:hover &--t1{
+                border-bottom: 2px solid lightblue;
+            }
+        }
+
+        &--p2{
+            right: 0;
+            top: 5rem;
+            background-color: $color-grey-light;
+            padding: 2rem 0;
+            z-index: 12;
+        }
+
+        &--p3{
+            left: 20%;
+            top: 14rem;
+            z-index: 10;
+        }
+
+        &:hover{
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05) translateY(-1rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+
+    &:hover &__photo:not(:hover){
+        transform: scale(.95);
+    }
+
+}
+
+.test-container{
+
+}
